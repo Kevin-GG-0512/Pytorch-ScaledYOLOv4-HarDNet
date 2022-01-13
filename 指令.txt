@@ -1,0 +1,6 @@
+訓練
+python train.py --img 416 --batch 16 --epochs 1000 --device 0 --data ../data.yaml --cfg ./models/yolov4-hardnet.yaml --weights '' --name yolov4-hardnet-416-16-1000-results  --cache
+python train.py --img 416 --batch 16 --epochs 10 --device 0 --data ../data.yaml --cfg ./models/yolov4-csp.yaml --weights '' --name yolov4-csp-416-16-10-results  --cache
+
+偵測
+python detect.py --weights ./runs/exp0_yolov4-csp-results/weights/best_yolov4-csp-results.pt --img 416 --conf 0.4 --source ../test/images

@@ -1,0 +1,11 @@
+numpy == 1.21.4
+opencv-python == 4.5.4.58
+PyAutoGUI == 0.9.52
+Pillow
+setuptools
+wheel
+tensorboard
+tqdm 
+matplotlib
+pyyaml
+scipy

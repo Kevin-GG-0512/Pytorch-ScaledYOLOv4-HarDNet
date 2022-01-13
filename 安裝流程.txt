@@ -1,0 +1,37 @@
+環境要求：
+python 3.7.9
+torch 1.7.1
+
+
+
+安裝步驟：
+
+1. 安裝套件
+pip install -r requirements.txt
+
+2. 安裝 pytorch
+conda install pytorch torchvision torchaudio cpuonly -c pytorch
+pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+
+3. 安裝 mish	
+cd mish-cuda
+python setup.py build install
+
+4. 安裝 Microsoft Visual C++ 14.0 (Visual Studio Professional 2019)
+
+下載 Visual Studio Professional
+
+選擇	MSVC v142 - VS 2019 C++ x64/x86建置工具
+	Windows 10 SDK(10.0.19041.0)
+	適用於 Windows 的 C++ CMake 工具
+	測試工具的核心功能 - 建置工具
+	C++ AddressSanitizer
+
+5. 準備資料集
+可以使用labelimg等軟體
+
+6. 設定data.yaml
+設定classes
+
+
+
